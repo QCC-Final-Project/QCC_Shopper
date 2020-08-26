@@ -12,6 +12,7 @@ class Students extends Component {
   async componentDidMount() {
     const res = await fetch('/api/students')
     const data = await res.json();
+    console.log(data);
     this.setState({
       students: data,
     })
