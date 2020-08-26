@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
+const db = require('./db');
 
 app.use(morgan('dev'));
 app.use(express.json());
@@ -63,8 +64,15 @@ app.get('/green', (req, res) => {
     `)
 })
 
-const PORT = 4000;
+//sync database
+const startApp = async () => {
+    const PORT = 4000;
 
-app.listen(PORT,() => {
-    console.log(`listening on port ${PORT}`);
-});
+    await db.sync({force: true});
+
+    app.listen(PORT,() => {
+        console.log(`listening on port ${PORT}`);
+    });
+}
+
+startApp();
