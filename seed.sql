@@ -1,5 +1,5 @@
 TRUNCATE TABLE user,item;
-   
+
 insert into user (name,address, email, password) values('RubeusH','100 Broad Street, New York, NY 10004','RubeusH@msn.com','C8nUgue$5i7' );
 inseRT INTO user (name,imageUrl,address, email, password) VALUES ('Baddock','https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425__340.png','17091 Knots Landing, Addison, Texas 75001','Baddock@gmail.com','kn0wH0w$123');
 INSERT INTO user (name,address, email, password) VALUES ('Hetty','500 Oracle Parkway Redwood Shores, CA 94065','hetty@oracle.com','take8Gue$s');
