@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css'; //not relevant to our project yet
-import Students from './students'
 import Routes from './Routes';
 import {
   BrowserRouter as Router,
