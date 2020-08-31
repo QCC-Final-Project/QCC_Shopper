@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use('/api', require('./api'));
 
+/*
 app.get('/', (req, res) => {
     res.send(`
     <html>
@@ -63,6 +64,7 @@ app.get('/green', (req, res) => {
     </html>
     `)
 })
+*/
 
 //sync database
 const startApp = async () => {
@@ -76,3 +78,8 @@ const startApp = async () => {
 }
 
 startApp();
+
+// routes  
+app.use('/item', require('./routes/itemRoute'))
+app.use('/user', require('./routes/userRoute'))
+app.use('/order', require('./routes/orderRoute'))
