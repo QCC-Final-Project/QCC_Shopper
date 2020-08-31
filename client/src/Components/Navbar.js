@@ -6,4 +6,4 @@ export default function Navbar() {
         <Link to = '/'>Home</Link>
         <Link to = '/items'>Items</Link>
     </div>)
-}
+};

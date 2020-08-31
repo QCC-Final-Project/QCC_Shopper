@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css'; //not relevant to our project yet
-import Students from './students'
 import Routes from './Routes';
 import {
   BrowserRouter as Router,
@@ -9,7 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { Navbar } from './Components';
+import { Navbar } from './Components/index';
 
 class QCC_Shopper extends Component {
 
