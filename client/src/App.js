@@ -1,28 +1,31 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.css'; //not relevant to our project yet
 import Students from './students'
+import Routes from './Routes';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { Navbar } from './Components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Students />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class QCC_Shopper extends Component {
 
-export default App;
+  //don't think we need this yet since we don't need state atm
+  constructor() {
+    super();
+  };
+
+  render() {
+    return(
+      <Router>
+        <Navbar />
+        <Routes />
+      </Router>
+    );
+  }
+};
+
+export default QCC_Shopper
