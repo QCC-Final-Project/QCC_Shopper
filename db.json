@@ -1,0 +1,24 @@
+{
+    "colors": [
+      {
+        "id": 1,
+        "name": "red",
+        "description": "RED paint description here.",
+        "price": 10
+      },
+
+      {
+        "id": 2,
+        "name": "blue",
+        "description": "BLUE paint description here.",
+        "price": 11
+      },
+
+      {
+        "id": 3,
+        "name": "green",
+        "description": "GREEN paint description here.",
+        "price": 12
+      }
+    ]
+  }

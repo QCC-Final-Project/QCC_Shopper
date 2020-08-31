@@ -5,13 +5,16 @@ import {
     Route,
     Link
   } from 'react-router-dom';
-import {Home, ListItems} from './Components';
+import { Home, ListItems, Cart } from './Components';
 
 export default () => {
     return(
         <Switch>
             <Route path='/items'>
                 <ListItems />
+            </Route>
+            <Route path='/cart'>
+                <Cart />
             </Route>
             <Route path='/'>
                 <Home />
