@@ -8,7 +8,7 @@ const User = db.define('user', {
   },
   imageUrl: {
     type: Sequelize.STRING,
-    defaultValue: "images/default-img.jpg"
+    defaultValue: "https://www.adrcdoorcounty.org/wp-content/uploads/2019/05/mystery-person.jpg"
   },
   address: {
     type: Sequelize.STRING,

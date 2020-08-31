@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use('/api', require('./api'));
 
+
 app.get('/', (req, res) => {
     res.send(`
     <html>
@@ -64,6 +65,7 @@ app.get('/green', (req, res) => {
     `)
 })
 
+
 //sync database
 const startApp = async () => {
     const PORT = 4000;
@@ -76,3 +78,4 @@ const startApp = async () => {
 }
 
 startApp();
+
