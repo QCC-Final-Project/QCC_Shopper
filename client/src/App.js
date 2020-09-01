@@ -8,7 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { Navbar } from './Components';
+import { Navbar } from './Components/index';
 
 class QCC_Shopper extends Component {
 
