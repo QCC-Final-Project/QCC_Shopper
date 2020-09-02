@@ -3,7 +3,6 @@ import { Grid, Cell } from 'react-mdl';
 import axios from 'axios';
 import UserProfile from './UserProfile';
 
-
 class User extends Component {
   constructor () {
     super();
