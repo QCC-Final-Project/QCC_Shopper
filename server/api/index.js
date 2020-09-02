@@ -10,6 +10,8 @@ router.get('/items', async (req, res) => {
     }
 });
 
+router.use('/users', require('./userRoute'));
+
 // Old method for handling asynchronous code (promises)
 // router.get('/items', (req, res) => {
 //     Item.findAll().then((items) => {
