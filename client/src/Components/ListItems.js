@@ -34,8 +34,12 @@ class ListItems extends Component {
         <Grid>
           {this.state.items.map((item) => {
             return (
-              //not working - need to test more
-              <div>{item[0]}</div>
+              <>
+                <h4>{item.name}: $ {item.price}</h4>
+                <img src={item.imageUrl} style={{height: '50px'}} />
+                <div>{item.description}</div>
+                <hr/>
+              </>
             )
           }
           )}
