@@ -11,7 +11,7 @@ const UserProfile = (props) => {
           </div>
         </Cell>
         <Cell col={10}>
-          <p>{user.name} || {user.address} || {user.email}</p>
+          <p><a href="/users/`${user.id}`">{user.name}</a> || {user.address} || {user.email}</p>
           <hr style={{borderTop: '3px solid #833fb2'}}/>
         </Cell>
       </Grid>
