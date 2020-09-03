@@ -27,6 +27,13 @@ app.use('/api', require('./api'));
 //joins a path between the client and the server
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
+//test code
+//console.log(path.join(__dirname, '..' , 'client', 'build'));
+
+// app.get('/', function(req, res) {
+//   res.sendFile(path.join(__dirname, '..' , 'client', 'build', 'index.html'));
+// });
+
 //this will print out on the user page { name: 'Plato', id: 1 },  { name: 'Copernicus', id: 2 },
 /*app.get('/users', (req, res, next) => {
   res.send(users);
